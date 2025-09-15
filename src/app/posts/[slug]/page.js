@@ -1,6 +1,13 @@
-import { getPostData } from '@/lib/posts';
+import { getPostData, getSortedPostsData } from '@/lib/posts';
 import Link from 'next/link';
 import { ArrowLeft, ChevronRight } from 'lucide-react';
+
+export async function generateStaticParams() {
+  const posts = getSortedPostsData();
+  return posts.map((post) => ({
+    slug: post.id,
+  }));
+}
 
 export async function generateMetadata({ params }) {
   const postData = await getPostData(params.slug);

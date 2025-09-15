@@ -1,12 +1,8 @@
-// pages/index.js
-import fs from 'fs'
-import path from 'path'
-import { getSortedPostsData } from '@/lib/posts'
-import ArticleList from '@/components/ArticleList'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { siteData, engagementData, gameData } from '@/data/siteData'
 
 export const metadata: Metadata = {
   title: 'Human Expenditure Program - Psychological Horror Visual Novel | Play Free Online',
@@ -21,17 +17,6 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-
-  const siteDataPath = path.join(process.cwd(), 'data', 'json', 'site.json')
-  const siteData = JSON.parse(fs.readFileSync(siteDataPath, 'utf8'))
-
-  const engagementDataPath = path.join(process.cwd(), 'data', 'json', 'engagement-data.json')
-  const engagementData = JSON.parse(fs.readFileSync(engagementDataPath, 'utf8'))
-
-  const gameMetadataPath = path.join(process.cwd(), 'data', 'json', 'game-metadata.json')
-  const gameData = JSON.parse(fs.readFileSync(gameMetadataPath, 'utf8'))
-
-  const allPostsData = getSortedPostsData().slice(0, 6)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">

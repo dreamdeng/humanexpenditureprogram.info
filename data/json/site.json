@@ -1,10 +1,17 @@
 {
-  "name": "GitBase12",
-  "title": "GitBase - Open Source Dynamic Website CMS Without Database",
-  "description": "A Next.js site with Tailwind & Shadcn/UI, using GitHub API for content management. No database needed for dynamic updates.",
-  "slogan": "Open Source Dynamic Website CMS Without Database",
-  "intro": "GitBase is a dynamic, database-free website built with Next.js, Tailwind CSS, and Shadcn/UI, featuring a content management system powered by the GitHub API for seamless updates and administration.",
-  "url": "https://gitbase.app",
-  "author": "GitBase",
-  "footerText": "GitBase. All rights reserved."
+  "name": "Human Expenditure Program",
+  "title": "Human Expenditure Program - Psychological Horror Visual Novel | Play Free Online",
+  "description": "Experience SHROOMYCHRIST's latest psychological horror masterpiece. Play Human Expenditure Program directly in your browser - a haunting visual novel exploring moral choices and human nature. Free to play, no download required.",
+  "slogan": "Own Your Very Own Digital Harvey Harvington Today!",
+  "intro": "Manage Harvey Harvington's digital consciousness while his wife Eun-Mi secretly monetizes his suffering through a torture simulation. A sequel to BLOODMONEY! that explores the depths of human nature and moral responsibility.",
+  "url": "https://humanexpenditureprogram.info",
+  "author": "SHROOMYCHRIST",
+  "footerText": "Human Expenditure Program © 2025 SHROOMYCHRIST. All rights reserved.",
+  "gameUrl": "https://html-classic.itch.zone/html/14943229/index.html",
+  "youtubeUrl": "https://www.youtube.com/watch?v=_qKONc2bIto&t=321s",
+  "genre": "Psychological Horror Visual Novel",
+  "releaseDate": "September 12, 2025",
+  "platform": "Web Browser",
+  "duration": "~30 minutes",
+  "keywords": ["Human Expenditure Program", "psychological horror visual novel", "SHROOMYCHRIST games", "Harvey Harvington game", "free browser horror games", "BLOODMONEY sequel"]
 }

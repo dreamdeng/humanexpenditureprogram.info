@@ -1,37 +1,51 @@
 [
   {
-    "name": "Next.js",
-    "description": "The React Framework for the Web",
-    "url": "https://nextjs.org/"
+    "name": "Play Now",
+    "description": "Experience Harvey's digital consciousness directly in your browser - no download required",
+    "url": "/play",
+    "type": "primary",
+    "icon": "play"
   },
   {
-    "name": "Tailwind CSS",
-    "description": "A utility-first CSS framework",
-    "url": "https://tailwindcss.com/"
+    "name": "Watch Trailer",
+    "description": "See the haunting world of Human Expenditure Program in action",
+    "url": "https://www.youtube.com/watch?v=_qKONc2bIto&t=321s",
+    "type": "video",
+    "icon": "youtube"
   },
   {
-    "name": "Shadcn/ui",
-    "description": "Re-usable components built with Radix UI and Tailwind CSS",
-    "url": "https://ui.shadcn.com/"
+    "name": "Discover Story",
+    "description": "Dive deep into the lore, characters, and hidden secrets of Harvey's world",
+    "url": "/discover/story",
+    "type": "content",
+    "icon": "book"
   },
   {
-    "name": "Vercel",
-    "description": "Cloud platform for static sites and Serverless Functions",
-    "url": "https://vercel.com/"
+    "name": "Character Profiles",
+    "description": "Meet Harvey, Eun-Mi, and Toby - explore their complex relationships",
+    "url": "/discover/characters",
+    "type": "content",
+    "icon": "users"
   },
   {
-    "name": "Github.com",
-    "description": "The world's leading platform for version control and collaborative software development.",
-    "url": "https://github.com/"
+    "name": "Secrets Guide",
+    "description": "Unlock all 12 hidden secrets and discover the truth behind the simulation",
+    "url": "/discover/secrets",
+    "type": "guide",
+    "icon": "search"
   },
   {
-    "name": "Woy.ai",
-    "description": "AI Tools Directory",
-    "url": "https://woy.ai"
+    "name": "BLOODMONEY! (Prequel)",
+    "description": "Play the original game that started Harvey's story",
+    "url": "https://shroomychrist.itch.io/bloodmoney",
+    "type": "external",
+    "icon": "external"
   },
   {
-    "name": "Music Player",
-    "description": "Online Music Player",
-    "url": "https://musicplayer-olive.vercel.app/"
+    "name": "SHROOMYCHRIST Games",
+    "description": "Explore more psychological horror experiences by the developer",
+    "url": "https://shroomychrist.itch.io/",
+    "type": "developer",
+    "icon": "gamepad"
   }
 ]

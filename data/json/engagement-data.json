@@ -1,0 +1,115 @@
+{
+  "liveStats": {
+    "currentPlayers": 1247,
+    "totalPlays": 15683,
+    "secretsDiscovered": 8,
+    "endingsUnlocked": 3,
+    "totalSecrets": 12,
+    "totalEndings": 5,
+    "averageRating": 4.7,
+    "lastUpdated": "2025-09-15T12:00:00Z"
+  },
+  "mysteryTeasers": [
+    "The simulation knows when you're watching...",
+    "Eun-Mi's laptop contains more than business files.",
+    "Harvey's memories aren't entirely his own.",
+    "The revenue counter hides a darker truth.",
+    "Toby's questions have predetermined answers.",
+    "The exit button was never meant to work.",
+    "Some choices echo across multiple playthroughs.",
+    "The real Harvey might still be somewhere else."
+  ],
+  "playerTestimonials": [
+    {
+      "id": 1,
+      "author": "HorrorFan92",
+      "avatar": "👻",
+      "text": "This game made me question everything about digital consciousness and human ethics. Haunting.",
+      "rating": 5,
+      "timestamp": "2025-09-14"
+    },
+    {
+      "id": 2,
+      "author": "VisualNovelLover",
+      "avatar": "📚",
+      "text": "The writing is exceptional. Every character feels real and their motivations are complex.",
+      "rating": 5,
+      "timestamp": "2025-09-13"
+    },
+    {
+      "id": 3,
+      "author": "PhilosophyGamer",
+      "avatar": "🧠",
+      "text": "SHROOMYCHRIST has created something that transcends typical horror. It's philosophical art.",
+      "rating": 5,
+      "timestamp": "2025-09-12"
+    },
+    {
+      "id": 4,
+      "author": "IndieHunter",
+      "avatar": "🎮",
+      "text": "Found 6 secrets so far. The hidden layer of storytelling is incredible. Must play multiple times.",
+      "rating": 4,
+      "timestamp": "2025-09-14"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "first_play",
+      "name": "Digital Tourist",
+      "description": "Complete your first playthrough of Human Expenditure Program",
+      "icon": "🆕",
+      "unlocked": true
+    },
+    {
+      "id": "secret_hunter",
+      "name": "Truth Seeker",
+      "description": "Discover 5 hidden secrets within Harvey's simulation",
+      "icon": "🔍",
+      "unlocked": true
+    },
+    {
+      "id": "multiple_endings",
+      "name": "Path Explorer",
+      "description": "Experience 3 different endings to Harvey's story",
+      "icon": "🛤️",
+      "unlocked": true
+    },
+    {
+      "id": "secret_master",
+      "name": "Digital Detective",
+      "description": "Uncover all 12 secrets hidden in the simulation",
+      "icon": "🕵️",
+      "unlocked": false,
+      "progress": "8/12"
+    },
+    {
+      "id": "ending_collector",
+      "name": "Fate Controller",
+      "description": "Witness all 5 possible endings for Harvey's consciousness",
+      "icon": "👑",
+      "unlocked": false,
+      "progress": "3/5"
+    }
+  ],
+  "communityProgress": {
+    "totalCommunitySecrets": 8,
+    "recentDiscoveries": [
+      {
+        "secret": "Hidden Revenue Model",
+        "discoverer": "TruthSeeker_42",
+        "timestamp": "2025-09-14T15:30:00Z"
+      },
+      {
+        "secret": "Eun-Mi's Real Agenda",
+        "discoverer": "DigitalDetective",
+        "timestamp": "2025-09-14T09:15:00Z"
+      },
+      {
+        "secret": "Harvey's Memory Fragments",
+        "discoverer": "SimulationHacker",
+        "timestamp": "2025-09-13T21:45:00Z"
+      }
+    ]
+  }
+}

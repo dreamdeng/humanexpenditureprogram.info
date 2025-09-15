@@ -1,0 +1,108 @@
+{
+  "game": {
+    "title": "Human Expenditure Program",
+    "developer": "SHROOMYCHRIST",
+    "genre": "Psychological Horror Visual Novel",
+    "releaseDate": "2025-09-12",
+    "platform": "Web Browser",
+    "duration": "30 minutes",
+    "price": "Free",
+    "rating": "Mature",
+    "gameUrl": "https://html-classic.itch.zone/html/14943229/index.html",
+    "youtubeTrailer": "https://www.youtube.com/watch?v=_qKONc2bIto&t=321s",
+    "storyline": "A sequel to BLOODMONEY! where players manage Harvey Harvington's digital consciousness while his wife Eun-Mi secretly monetizes his suffering through a torture simulation.",
+    "themes": ["Moral Responsibility", "Digital Consciousness", "Human Nature", "Psychological Horror", "Family Dynamics"],
+    "features": ["Multiple Endings", "Hidden Secrets", "Character Development", "Psychological Themes", "Interactive Story"]
+  },
+  "characters": [
+    {
+      "name": "Harvey Harvington",
+      "role": "Digital Prisoner",
+      "description": "The protagonist whose consciousness has been digitized and is now trapped in a virtual environment, unaware of his wife's monetization scheme.",
+      "traits": ["Vulnerable", "Confused", "Desperate", "Human"],
+      "quote": "I just want to understand what's happening to me..."
+    },
+    {
+      "name": "Eun-Mi",
+      "role": "The Controller",
+      "description": "Harvey's wife who secretly profits from his digital suffering, creating moral dilemmas about love, loyalty, and exploitation.",
+      "traits": ["Manipulative", "Business-minded", "Conflicted", "Secretive"],
+      "quote": "Sometimes love requires difficult choices..."
+    },
+    {
+      "name": "Toby",
+      "role": "The Observer",
+      "description": "A mysterious figure who may hold keys to understanding the true nature of Harvey's situation.",
+      "traits": ["Enigmatic", "Knowledgeable", "Morally Ambiguous", "Catalyst"],
+      "quote": "The truth is rarely as simple as we want it to be."
+    }
+  ],
+  "gameplay": {
+    "totalSecrets": 12,
+    "discoveredSecrets": 8,
+    "totalEndings": 5,
+    "discoveredEndings": 3,
+    "averagePlaytime": "25-35 minutes",
+    "replayability": "High",
+    "difficultyLevel": "Medium"
+  },
+  "community": {
+    "currentPlayers": 1247,
+    "totalPlays": 15683,
+    "secretsFound": 8,
+    "endingsUnlocked": 3,
+    "averageRating": 4.7,
+    "playerReviews": [
+      {
+        "author": "HorrorFan92",
+        "rating": 5,
+        "comment": "Deeply unsettling and thought-provoking. The moral choices really got to me."
+      },
+      {
+        "author": "VisualNovelLover",
+        "rating": 4,
+        "comment": "Brilliant storytelling and character development. Left me thinking for days."
+      },
+      {
+        "author": "GamerPhilosopher",
+        "rating": 5,
+        "comment": "SHROOMYCHRIST has created something truly unique. The themes hit hard."
+      }
+    ]
+  },
+  "seo": {
+    "primaryKeywords": [
+      "Human Expenditure Program",
+      "psychological horror visual novel",
+      "SHROOMYCHRIST games",
+      "Harvey Harvington game",
+      "free browser horror games",
+      "BLOODMONEY sequel"
+    ],
+    "secondaryKeywords": [
+      "moral choice games",
+      "digital consciousness horror",
+      "interactive psychological thriller",
+      "free horror visual novel",
+      "browser based horror game",
+      "psychological horror 2025"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Human Expenditure Program",
+      "description": "A psychological horror visual novel exploring themes of responsibility and moral choice",
+      "genre": ["Horror", "Visual Novel", "Indie"],
+      "gameLocation": "https://html-classic.itch.zone/html/14943229/index.html",
+      "playMode": "SinglePlayer",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "SHROOMYCHRIST"
+      },
+      "datePublished": "2025-09-12"
+    }
+  }
+}

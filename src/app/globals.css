@@ -1,76 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Human Expenditure Program Color Palette */
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #1c1c1e;
+    --accent-red: #ff2d55;
+    --accent-blue: #007aff;
+    --accent-purple: #af52de;
+    --accent-green: #34c759;
+    --accent-yellow: #ffcc00;
+    --accent-orange: #ff9500;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #8e8e93;
+    --text-tertiary: #636366;
+    --border-color: rgba(255, 45, 85, 0.2);
+    --card-bg: rgba(28, 28, 30, 0.8);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
-  }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Interactive States */
+    --hover-red: #ff3d65;
+    --hover-blue: #0a84ff;
+    --hover-purple: #bf5af2;
+    --success-green: #34c759;
+    --warning-orange: #ff9500;
+
+    /* Shadcn/UI Variables */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 40% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 40% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 0 72% 51%;
+
+    --radius: 0.75rem;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
+
+  h5 {
+    @apply text-lg sm:text-xl font-semibold;
+  }
+
+  h6 {
+    @apply text-base sm:text-lg font-semibold;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Effects */
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/40 border border-white/10;
+  }
+
+  /* Game-specific UI Components */
+  .game-card {
+    @apply bg-slate-800/50 border-slate-700 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+
+  .horror-gradient {
+    background: linear-gradient(135deg, #dc2626, #7c2d12, #1e1b4b);
+  }
+
+  .digital-glow {
+    box-shadow: 0 0 20px rgba(255, 45, 85, 0.3), 0 0 40px rgba(255, 45, 85, 0.1);
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* Interactive Elements */
+  .interactive-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .button-primary {
+    @apply bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+  .button-secondary {
+    @apply bg-slate-800 border border-slate-600 text-gray-300 hover:bg-slate-700 font-medium px-6 py-3 rounded-lg transition-all duration-300;
+  }
+
+  /* Text Effects */
+  .text-gradient-red {
+    @apply bg-gradient-to-r from-red-400 to-pink-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-blue-400 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-yellow {
+    @apply bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent;
+  }
+
+  /* Progress Bars */
+  .progress-bar {
+    @apply w-full bg-slate-700 rounded-full h-2 overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-500;
+  }
+
+  /* Card Variants */
+  .card-mystery {
+    @apply bg-slate-800/20 border-slate-700 border-dashed hover:border-purple-500/50 transition-all duration-300;
+  }
+
+  .card-discovered {
+    @apply bg-slate-800/40 border-slate-600 hover:border-yellow-500/50 transition-all duration-300;
+  }
+
+  .card-character {
+    @apply bg-slate-800/40 border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+}
+
+@layer utilities {
+  /* Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Responsive Text Sizes */
+  .text-hero {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .text-section {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  .text-card {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  }
+
+  .text-body {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 45, 85, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 45, 85, 0.6), 0 0 60px rgba(255, 45, 85, 0.2);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff2d55;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3d65;
+}
+
+/* Selection Styling */
+::selection {
+  background-color: rgba(255, 45, 85, 0.3);
+  color: white;
+}
+
+/* Focus Styles */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ff2d55;
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
   }
 }

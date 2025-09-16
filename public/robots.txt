@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://humanexpenditureprogram.info/sitemap.xml
+
+# Optimize crawling for important pages
+Allow: /play
+Allow: /posts
+
+# Block any potential admin or development paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow all common search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

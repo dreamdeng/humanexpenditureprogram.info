@@ -5,20 +5,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { siteData, engagementData, gameData } from '@/data/siteData'
 
 export const metadata: Metadata = {
-  title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Free Online Game',
-  description: 'Play BLOODMONEY 2 sequel featuring Harvey Harvington! Human Expenditure Program is a free psychological horror visual novel. Experience Harvey Harvington BLOODMONEY continuation online - no download required.',
+  title: 'BLOODMONEY 2: Harvey Harvington Online Game',
+  description: 'Play BLOODMONEY 2 sequel featuring Harvey Harvington! Human Expenditure Program is a free psychological horror visual novel online - no download required.',
   keywords: ['bloodmoney 2', 'harvey harvington', 'human expenditure program game', 'bloodmoney harvey', 'harvey harvington bloodmoney', 'bloodmoney 2 download', 'bloodmoney sequel', 'psychological horror game', 'free browser game', 'SHROOMYCHRIST'],
+  alternates: {
+    canonical: 'https://humanexpenditureprogram.info'
+  },
   openGraph: {
-    title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Digital Consciousness',
-    description: 'Experience the official BLOODMONEY sequel! Manage Harvey Harvington\'s digital consciousness in this free psychological horror visual novel.',
+    title: 'BLOODMONEY 2: Harvey Harvington Online Game',
+    description: 'Play BLOODMONEY 2 sequel featuring Harvey Harvington! Free psychological horror visual novel online - no download required.',
     type: 'website',
     url: 'https://humanexpenditureprogram.info',
     siteName: 'Human Expenditure Program',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Game',
-    description: 'Play the official BLOODMONEY sequel featuring Harvey Harvington. Free psychological horror visual novel - no download required.',
+    title: 'BLOODMONEY 2: Harvey Harvington Online Game',
+    description: 'Play BLOODMONEY 2 sequel featuring Harvey Harvington! Free psychological horror visual novel online - no download required.',
   },
   robots: {
     index: true,
@@ -45,16 +48,18 @@ export default function Home() {
               {siteData.slogan}
             </span>
           </h1>
-          <h2 className="text-2xl font-semibold text-gray-300 sm:text-3xl md:text-4xl">
+          <div className="text-2xl font-semibold text-gray-300 sm:text-3xl md:text-4xl">
             {gameData.game.title}
-          </h2>
+          </div>
           <p className="mx-auto max-w-[800px] text-lg text-gray-400 md:text-xl">
             {siteData.intro}
           </p>
         </div>
 
         {/* Live Stats */}
-        <div className="flex flex-wrap justify-center gap-6 mt-8">
+        <div className="mt-8">
+          <h2 className="text-2xl font-bold text-white mb-6">Live Game Statistics</h2>
+          <div className="flex flex-wrap justify-center gap-6">
           <div className="text-center">
             <div className="text-3xl font-bold text-red-400">{engagementData.liveStats.currentPlayers.toLocaleString()}</div>
             <div className="text-sm text-gray-400">Currently Playing</div>
@@ -71,6 +76,7 @@ export default function Home() {
             <div className="text-3xl font-bold text-green-400">{engagementData.liveStats.endingsUnlocked}/{engagementData.liveStats.totalEndings}</div>
             <div className="text-sm text-gray-400">Endings Unlocked</div>
           </div>
+        </div>
         </div>
 
         {/* CTA Buttons */}
@@ -94,7 +100,7 @@ export default function Home() {
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-white">Experience Harvey's Digital World</h3>
+                <h2 className="text-3xl font-bold text-white">Experience Harvey's Digital World</h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   {gameData.game.storyline}
                 </p>
@@ -129,7 +135,7 @@ export default function Home() {
       {/* YouTube Trailer Section */}
       <section id="trailer" className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h3 className="text-4xl font-bold text-white mb-4">Watch the Official Trailer</h3>
+          <h2 className="text-4xl font-bold text-white mb-4">Watch the Official Trailer</h2>
           <p className="text-gray-400 text-lg">See the haunting world of Human Expenditure Program</p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -151,7 +157,7 @@ export default function Home() {
       {/* Mystery Teasers */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h3 className="text-4xl font-bold text-white mb-4">The Simulation Whispers...</h3>
+          <h2 className="text-4xl font-bold text-white mb-4">The Simulation Whispers...</h2>
           <p className="text-gray-400 text-lg">Cryptic messages from Harvey's digital world</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -168,7 +174,7 @@ export default function Home() {
       {/* Player Testimonials */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h3 className="text-4xl font-bold text-white mb-4">What Players Are Saying</h3>
+          <h2 className="text-4xl font-bold text-white mb-4">What Players Are Saying</h2>
           <p className="text-gray-400 text-lg">Real reactions from the community</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

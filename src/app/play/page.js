@@ -92,6 +92,7 @@ export default function PlayPage() {
           </div>
         </div>
 
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">Community Progress</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <Card className="bg-slate-800/40 border-slate-700">
             <CardHeader className="pb-2">
@@ -141,6 +142,7 @@ export default function PlayPage() {
           </Card>
         </div>
 
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">Related Content</h2>
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card className="bg-slate-800/30 border-slate-700 hover:bg-slate-700/30 transition-colors">
             <CardHeader>

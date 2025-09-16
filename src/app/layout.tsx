@@ -7,11 +7,12 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://humanexpenditureprogram.info'),
   title: {
     default: 'Human Expenditure Program - Psychological Horror Visual Novel',
     template: '%s | Human Expenditure Program'
   },
-  description: 'Experience SHROOMYCHRIST\'s latest psychological horror masterpiece. Play Human Expenditure Program directly in your browser - a haunting visual novel exploring moral choices and human nature.',
+  description: 'Play Human Expenditure Program free online! SHROOMYCHRIST\'s psychological horror visual novel featuring Harvey Harvington. No download required.',
 }
 
 interface RootLayoutProps {

@@ -2,8 +2,11 @@ import ArticleList from '@/components/ArticleList'
 import { getSortedPostsData } from '@/lib/posts';
 
 export const metadata = {
-  title: 'Articles',
-  description: 'Read our latest articles on web development, GitHub tips, and best practices.',
+  title: 'BLOODMONEY 2 Articles & Harvey Harvington Guides',
+  description: 'Read articles about Harvey Harvington, BLOODMONEY 2 guides, Human Expenditure Program tips, and SHROOMYCHRIST game analysis.',
+  alternates: {
+    canonical: 'https://humanexpenditureprogram.info/posts'
+  }
 };
 
 export default function Articles() {

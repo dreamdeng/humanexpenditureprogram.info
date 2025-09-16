@@ -12,8 +12,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const postData = await getPostData(params.slug);
   return {
-    title: `${postData.title}`,
-    description: postData.description || `Read about ${postData.title} on GitBase`,
+    title: `${postData.title} | Harvey Harvington Guide`,
+    description: postData.description || `Read about ${postData.title} - Harvey Harvington BLOODMONEY 2 analysis and Human Expenditure Program insights.`,
+    alternates: {
+      canonical: `https://humanexpenditureprogram.info/posts/${params.slug}`
+    }
   };
 }
 

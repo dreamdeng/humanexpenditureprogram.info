@@ -36,6 +36,56 @@ export default function RootLayout({ children }: RootLayoutProps) {
             gtag('config', 'G-1NZMBEZDYT');
           `}
         </Script>
+
+        {/* Structured Data for SEO */}
+        <Script id="structured-data" type="application/ld+json" strategy="beforeInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "VideoGame",
+              "name": "BLOODMONEY 2: Human Expenditure Program",
+              "alternateName": ["Human Expenditure Program", "Harvey Harvington BLOODMONEY 2"],
+              "description": "Play the official BLOODMONEY sequel featuring Harvey Harvington! Free psychological horror visual novel where you manage Harvey's digital consciousness. No download required.",
+              "url": "https://humanexpenditureprogram.info",
+              "image": "https://humanexpenditureprogram.info/favicon.ico",
+              "genre": ["Psychological Horror", "Visual Novel", "Interactive Fiction"],
+              "gamePlatform": ["Web Browser", "PC", "Mobile"],
+              "operatingSystem": ["Windows", "macOS", "Linux", "iOS", "Android"],
+              "applicationCategory": "Game",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "SHROOMYCHRIST"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "SHROOMYCHRIST",
+                "url": "https://shroomychrist.itch.io/"
+              },
+              "isPartOf": {
+                "@type": "VideoGameSeries",
+                "name": "BLOODMONEY Series"
+              },
+              "character": [
+                {
+                  "@type": "Person",
+                  "name": "Harvey Harvington"
+                }
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "ratingCount": "1247",
+                "bestRating": "5"
+              }
+            }
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <Layout>{children}</Layout>

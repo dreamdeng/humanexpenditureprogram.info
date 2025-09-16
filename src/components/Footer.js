@@ -3,59 +3,59 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 border-t border-gray-200">
+    <footer className="bg-gray-900 border-t border-gray-700">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">About</h3>
-            <p className="mt-4 text-base text-gray-500">
-              GitBase is an open-source dynamic website solution without a traditional database, built with Next.js and powered by GitHub.
+            <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">About Human Expenditure Program</h3>
+            <p className="mt-4 text-base text-gray-400">
+              Experience the psychological horror sequel to BLOODMONEY! Play Harvey Harvington's digital consciousness simulation - a free browser-based visual novel exploring corporate ethics and human nature.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Quick Links</h3>
+            <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">Quick Links</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link href="/" className="text-base text-gray-500 hover:text-gray-900">
+                <Link href="/" className="text-base text-gray-400 hover:text-white">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-base text-gray-500 hover:text-gray-900">
-                  Resources
+                <Link href="/play" className="text-base text-gray-400 hover:text-white">
+                  Play Game
                 </Link>
               </li>
               <li>
-                <Link href="/posts" className="text-base text-gray-500 hover:text-gray-900">
+                <Link href="/posts" className="text-base text-gray-400 hover:text-white">
                   Articles
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Connect</h3>
+            <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact & Support</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <a href="https://gitbase.app/" target="_blank" className="text-base text-gray-500 hover:text-gray-900">
-                  GitBase
+                <a href="mailto:dengchr@protonmail.com" className="text-base text-gray-400 hover:text-white">
+                  Contact Developer
                 </a>
               </li>
               <li>
-                <a href="https://github.com/qiayue/gitbase" target="_blank" className="text-base text-gray-500 hover:text-gray-900">
-                  GitHub
+                <a href="https://shroomychrist.itch.io/" target="_blank" rel="noopener noreferrer" className="text-base text-gray-400 hover:text-white">
+                  SHROOMYCHRIST Games
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/gefei55" target="_blank" className="text-base text-gray-500 hover:text-gray-900">
-                  Twitter
+                <a href="https://shroomychrist.itch.io/bloodmoney" target="_blank" rel="noopener noreferrer" className="text-base text-gray-400 hover:text-white">
+                  BLOODMONEY (Original)
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} GitBase. All rights reserved.
+        <div className="mt-8 border-t border-gray-700 pt-8">
+          <p className="text-base text-gray-500 text-center">
+            &copy; {new Date().getFullYear()} Human Expenditure Program. All rights reserved. | humanexpenditureprogram.info
           </p>
         </div>
       </div>

@@ -38,12 +38,10 @@ export function Navigation() {
         </div>
         <div className="flex items-center gap-4">
           <Link
-            href="https://shroomychrist.itch.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            href="/play"
+            className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-4 py-2 rounded-lg transition-all duration-300 flex items-center gap-2"
           >
-            <span className="text-sm font-medium">More Games</span>
+            <span className="text-sm font-medium">🎮 Play Now</span>
           </Link>
         </div>
       </div>

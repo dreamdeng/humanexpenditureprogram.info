@@ -1,9 +1,9 @@
 // Static data imports for client-side usage
 export const siteData = {
-  "name": "Human Expenditure Program",
-  "title": "Human Expenditure Program - Psychological Horror Visual Novel | Play Free Online",
-  "slogan": "Own Your Very Own Digital Harvey Harvington Today!",
-  "intro": "Experience the sequel to BLOODMONEY! - A psychological horror visual novel where you manage Harvey Harvington's digital consciousness. Make moral choices, uncover dark secrets, and explore the boundaries between human and machine in this haunting interactive experience.",
+  "name": "BLOODMONEY 2: Human Expenditure Program",
+  "title": "BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Free Online Game",
+  "slogan": "Experience BLOODMONEY 2 - Harvey Harvington's Digital Consciousness",
+  "intro": "Play the official BLOODMONEY sequel featuring Harvey Harvington! Human Expenditure Program is a free psychological horror visual novel where you manage Harvey's digital consciousness. Experience the Harvey Harvington BLOODMONEY continuation with no download required - make moral choices, uncover dark secrets, and explore corporate ethics in this haunting browser-based game.",
   "gameUrl": "https://html-classic.itch.zone/html/14943229/index.html",
   "youtubeUrl": "https://www.youtube.com/watch?v=_qKONc2bIto&t=321s"
 }

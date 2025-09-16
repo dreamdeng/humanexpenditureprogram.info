@@ -4,7 +4,9 @@
       "Bash(npm run dev:*)",
       "Bash(npm run build:*)",
       "Bash(curl:*)",
-      "Bash(NODE_ENV=production npm run build)"
+      "Bash(NODE_ENV=production npm run build)",
+      "Bash(pkill:*)",
+      "Bash(npm install)"
     ],
     "deny": [],
     "ask": []

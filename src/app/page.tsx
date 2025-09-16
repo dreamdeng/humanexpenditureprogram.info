@@ -5,15 +5,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { siteData, engagementData, gameData } from '@/data/siteData'
 
 export const metadata: Metadata = {
-  title: 'Human Expenditure Program - Psychological Horror Visual Novel | Play Free Online',
-  description: 'Experience SHROOMYCHRIST\'s latest psychological horror masterpiece. Play Human Expenditure Program directly in your browser - a haunting visual novel exploring moral choices and human nature. Free to play, no download required.',
-  keywords: ['Human Expenditure Program', 'psychological horror visual novel', 'SHROOMYCHRIST games', 'Harvey Harvington game', 'free browser horror games', 'BLOODMONEY sequel'],
+  title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Free Online Game',
+  description: 'Play BLOODMONEY 2 sequel featuring Harvey Harvington! Human Expenditure Program is a free psychological horror visual novel. Experience Harvey Harvington BLOODMONEY continuation online - no download required.',
+  keywords: ['bloodmoney 2', 'harvey harvington', 'human expenditure program game', 'bloodmoney harvey', 'harvey harvington bloodmoney', 'bloodmoney 2 download', 'bloodmoney sequel', 'psychological horror game', 'free browser game', 'SHROOMYCHRIST'],
   openGraph: {
-    title: 'Human Expenditure Program - Own Your Digital Harvey Harvington Today!',
-    description: 'Manage Harvey Harvington\'s digital consciousness in this haunting sequel to BLOODMONEY!',
+    title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Digital Consciousness',
+    description: 'Experience the official BLOODMONEY sequel! Manage Harvey Harvington\'s digital consciousness in this free psychological horror visual novel.',
     type: 'website',
     url: 'https://humanexpenditureprogram.info',
-  }
+    siteName: 'Human Expenditure Program',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BLOODMONEY 2: Human Expenditure Program - Harvey Harvington Game',
+    description: 'Play the official BLOODMONEY sequel featuring Harvey Harvington. Free psychological horror visual novel - no download required.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function Home() {

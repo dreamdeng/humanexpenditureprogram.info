@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { siteData, engagementData, gameData } from '@/data/siteData'
+import GamePreview from '@/components/GamePreview'
 
 export const metadata: Metadata = {
   title: 'BLOODMONEY 2: Harvey Harvington Online Game',
@@ -95,42 +96,7 @@ export default function Home() {
       </section>
 
       {/* Game Preview Card */}
-      <section className="container mx-auto px-4 py-16">
-        <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-          <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold text-white">Experience Harvey's Digital World</h2>
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  {gameData.game.storyline}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {gameData.game.themes.map((theme: string, index: number) => (
-                    <span key={index} className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm">
-                      {theme}
-                    </span>
-                  ))}
-                </div>
-                <div className="pt-4">
-                  <Link href="/play">
-                    <Button className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white">
-                      Start Playing Now
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-slate-900/50 p-4 rounded-lg">
-                <iframe
-                  src={siteData.gameUrl}
-                  className="w-full h-64 md:h-80 rounded border-2 border-slate-600"
-                  title="Human Expenditure Program Preview"
-                  allow="fullscreen"
-                />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
+      <GamePreview />
 
       {/* YouTube Trailer Section */}
       <section id="trailer" className="container mx-auto px-4 py-16">
